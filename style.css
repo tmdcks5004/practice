@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(82, 44, 0);
+}
+
+/* 상단 네비게이션바 정보*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 8px 12px;
+}
+
+.navbar_menu :hover {
+    background-color: rgb(219, 159, 20);
+    text-decoration: underline;
+    border-radius: 4px;
+}
+.navbar_menu :active{
+    background-color: rgb(73, 50, 0);
+    text-decoration: underline;
+    color: aliceblue;
+}
+.navbar_logo {
+    font-size: 18px;
+    color: saddlebrown;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.navbar_links {
+    list-style: none;
+
+}
+/* WHO menu index */
+.whoBox {
+    font-size: 42px;
+    text-align: center;
+}
+
+.actOne {
+        width: 21.5ch;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid #212121;
+        animation: typing 1s , 
+        text 3s steps(16) ;
+    }
+
+    @keyframes typing {
+        0%, 100% { 
+        border-color: #212121; 
+      }
+    }
+    
+    @keyframes text {
+        0% { 
+        width: 0; 
+      }
+        60% { 
+        width: 21.5ch; 
+      }
+}
+
+.actTwo {
+    width: 21.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #212121;
+    animation: typing 1s , 
+    text 3s steps(16) ;
+}
+
+@keyframes typing {
+    0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+    0% { 
+    width: 0; 
+  }
+    60% { 
+    width: 21.5ch; 
+  }
+}
+
+/* INDEX menu index */
+
+.indexBox{
+    width: 100%;
+    margin: 14px auto;
+    position: relative;
+}
+
+.indexBox-text {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+}
+.indexBackground{
+    max-width: 100%;
+}
+
+.skillBox{
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.skillBoxBackground{
+    max-width: 100%;
+}
