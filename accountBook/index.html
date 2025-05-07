@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>가계부 웹앱</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 나의 가계부</h1>
+
+    <form id="form">
+      <input type="date" id="date" required />
+      <input type="text" id="desc" placeholder="항목명" required />
+      <input type="number" id="amount" placeholder="금액" required />
+      <select id="type">
+        <option value="income">수입</option>
+        <option value="expense">지출</option>
+      </select>
+      <button type="submit">등록</button>
+    </form>
+
+    <div class="summary">
+      <p>총 수입: <span id="incomeTotal">0</span>원</p>
+      <p>총 지출: <span id="expenseTotal">0</span>원</p>
+      <p>합계: <span id="balance">0</span>원</p>
+    </div>
+
+    <ul id="list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
